@@ -9,10 +9,13 @@ public class PrisonDoorBehavior : MonoBehaviour
     [SerializeField] float maxX;
     [SerializeField] float minX;
 
+    AudioSource audioSource; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         cam = Camera.main;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +26,7 @@ public class PrisonDoorBehavior : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isHeld = false;
+            audioSource.Pause();
         }
 
         if (isHeld)
@@ -45,6 +49,8 @@ public class PrisonDoorBehavior : MonoBehaviour
         Debug.Log("MouseOver");
         if (Input.GetMouseButtonDown(0))
         {
+            audioSource.Play();
+
             Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
             xDisplacement = mousePos.x - this.transform.position.x;

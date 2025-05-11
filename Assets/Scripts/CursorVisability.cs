@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class CursorVisability : MonoBehaviour
 {
-    Animator anim; 
+    Animator anim;
+ //   public bool full;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -54,9 +54,11 @@ public class StickBehavior : MonoBehaviour
                 manager.GetComponent<StickManager>().currentStick = null;
 
                 isInFinalPosition = true;
+
                 isHeld = false;
             }
         }
+
 
         
 
@@ -66,15 +68,23 @@ public class StickBehavior : MonoBehaviour
     {
         Debug.Log("MouseOver");
         if (Input.GetMouseButton(0) && manager.GetComponent<StickManager>().currentStick == null || manager.GetComponent<StickManager>().currentStick == this.gameObject) {
-            Debug.Log("IsClicked");
             isHeld = true;
-            audioSource.Play();
             manager.GetComponent<StickManager>().currentStick = this.gameObject;
 
             Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
             xDisplacement = mousePos.x - this.transform.position.x;
             yDisplacement = mousePos.y - this.transform.position.y;
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            audioSource.Play();
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            audioSource.Play();
+        }
+
+
     }
 
     private void OnMouseExit()

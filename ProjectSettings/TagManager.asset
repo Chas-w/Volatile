@@ -9,6 +9,7 @@ TagManager:
   - Ruler
   - Rock
   - Hand
+  - Load
   layers:
   - Default
   - TransparentFX

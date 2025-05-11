@@ -48,8 +48,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Act 1/Games/FlowerGrowing.unity
     guid: d8f99c22ccbc9a0468e19857d0f497d8
   - enabled: 1
+    path: Assets/Scenes/Act 2/Cines/A2 - C1.unity
+    guid: 2e083a51a4eed5d4fbcf94e642e49530
+  - enabled: 1
     path: Assets/Scenes/Act 2/Games/A2 - G1.unity
     guid: e0655a6008d59074e940c8986173589f
+  - enabled: 1
+    path: Assets/Scenes/Act 2/Cines/A2 - C2.unity
+    guid: 27d3aa19642566a479b57fc63e596a25
   - enabled: 1
     path: Assets/Scenes/Act 2/Games/A2 - G2.unity
     guid: 364b345ed5856ed41b9f5eb3a76b311d

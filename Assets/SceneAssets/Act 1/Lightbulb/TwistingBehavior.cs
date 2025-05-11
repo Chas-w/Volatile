@@ -15,7 +15,8 @@ public class TwistingBehavior : MonoBehaviour
 
     //GameObjects
     [SerializeField] GameObject mouseTracker;
-
+    AudioSource gearAudio;
+    bool playAudio; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,12 +27,19 @@ public class TwistingBehavior : MonoBehaviour
         transform.position += Vector3.up * radius;
 
         lastAngle = 0;
+        gearAudio = GetComponent<AudioSource>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+       if (!Input.GetMouseButton(0))
+        {
+
+            playAudio = false;
+            gearAudio.Pause();
+        }
         Vector3 mousePosition = mouseTracker.transform.position;
 
 
@@ -42,6 +50,13 @@ public class TwistingBehavior : MonoBehaviour
 
         if (isMixing && isInRange && Input.GetMouseButton(0))
         {
+            if (!playAudio)
+            {
+                gearAudio.Play();
+                playAudio = true;
+                //Debug.Log("audio");
+
+            }
             Vector3 orbVector = Camera.main.WorldToScreenPoint(orb.position);
             orbVector = Input.mousePosition - orbVector;
             float angle = Mathf.Atan2(orbVector.y, orbVector.x) * Mathf.Rad2Deg;
@@ -53,6 +68,7 @@ public class TwistingBehavior : MonoBehaviour
             {
                 totalRotation += Mathf.Abs(angle) / 1000;
                 lastAngle = angle;
+
             }
 
         }
