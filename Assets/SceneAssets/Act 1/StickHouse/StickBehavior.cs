@@ -9,6 +9,7 @@ public class StickBehavior : MonoBehaviour
     float xDisplacement;
     float yDisplacement;
 
+    AudioSource audioSource; 
     [SerializeField] GameObject finalPosition;
     [SerializeField] GameObject manager;
 
@@ -17,6 +18,7 @@ public class StickBehavior : MonoBehaviour
     {
         cam = Camera.main;
         isInFinalPosition = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -66,7 +68,7 @@ public class StickBehavior : MonoBehaviour
         if (Input.GetMouseButton(0) && manager.GetComponent<StickManager>().currentStick == null || manager.GetComponent<StickManager>().currentStick == this.gameObject) {
             Debug.Log("IsClicked");
             isHeld = true;
-
+            audioSource.Play();
             manager.GetComponent<StickManager>().currentStick = this.gameObject;
 
             Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);

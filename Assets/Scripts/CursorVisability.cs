@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class CursorVisability : MonoBehaviour
 {
-    public GameObject cursorEmpty;
-    public GameObject cursorGrab; 
+    Animator anim; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        anim = GetComponent<Animator>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
     }
@@ -16,20 +16,18 @@ public class CursorVisability : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            cursorEmpty.SetActive(false);
-            cursorGrab.SetActive(true) ;
+            anim.SetBool("Grab", true);
 
         }
         else
         {
-            cursorGrab.SetActive(false);
-            cursorEmpty.SetActive(true);
+            anim.SetBool("Grab", false);
+
 
         }
 
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        cursorGrab.transform.position = mousePosition;
-        cursorEmpty.transform.position = mousePosition;
+        transform.position = new Vector3(mousePosition.x, mousePosition.y, transform.position.z);
 
 
     }

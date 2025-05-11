@@ -18,6 +18,8 @@ public class LighterBehavior : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined; 
     }
 
     // Update is called once per frame

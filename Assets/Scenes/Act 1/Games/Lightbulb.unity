@@ -695,8 +695,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7fa655cf3d17a4f418d5fd7e25baafcd, type: 3}
-  m_Resource: {fileID: 8300000, guid: 7fa655cf3d17a4f418d5fd7e25baafcd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c8c776aaf648f1b4dbc400c8872b5802, type: 3}
+  m_Resource: {fileID: 8300000, guid: c8c776aaf648f1b4dbc400c8872b5802, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1088,7 +1088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3096079734151391275, guid: 337bdbb2eb857ba46aa591cc05230435, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.18
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 3096079734151391275, guid: 337bdbb2eb857ba46aa591cc05230435, type: 3}
       propertyPath: m_LocalRotation.w

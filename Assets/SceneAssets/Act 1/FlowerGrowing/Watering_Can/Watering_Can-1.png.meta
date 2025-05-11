@@ -94,7 +94,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -564,7 +564,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -573,7 +573,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Watering_Can-1_0: 5922680216970171754
+      Watering_Can-1_1: 8910663384422596688
+      Watering_Can-1_10: -8699904062390385972
+      Watering_Can-1_11: 8234018163587212630
+      Watering_Can-1_12: -7485724203113101385
+      Watering_Can-1_13: 1324728487590716599
+      Watering_Can-1_14: -6753871454164865374
+      Watering_Can-1_15: -199104926827634501
+      Watering_Can-1_16: -145422402911839876
+      Watering_Can-1_2: -8266894785970366137
+      Watering_Can-1_3: -8772520579931291394
+      Watering_Can-1_4: 6415006035574158054
+      Watering_Can-1_5: -1494851086568668078
+      Watering_Can-1_6: 7569868636106583792
+      Watering_Can-1_7: -2717247340490231831
+      Watering_Can-1_8: 185005234917571777
+      Watering_Can-1_9: 4243785581314573275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
