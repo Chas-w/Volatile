@@ -1,5 +1,5 @@
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
+//using static UnityEditor.PlayerSettings;
 using UnityEngine.UIElements;
 
 public class TelevisionSwapper : MonoBehaviour

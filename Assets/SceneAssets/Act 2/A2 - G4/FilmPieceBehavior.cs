@@ -16,9 +16,12 @@ public class FilmPieceBehavior : MonoBehaviour
     [SerializeField] GameObject finalPosition;
     [SerializeField] GameObject larryTray;
 
+    AudioSource audioSource; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         cam = Camera.main;
         isInFinalPosition = false;
 
@@ -36,6 +39,7 @@ public class FilmPieceBehavior : MonoBehaviour
             {
                 filmManager.GetComponent<FilmManager>().currentFilmPiece = null;
                 isHeld = false;
+                
             }
 
             if (isHeld)
@@ -43,6 +47,7 @@ public class FilmPieceBehavior : MonoBehaviour
                 //this.transform.position = new Vector3(mousePos.x - xDisplacement, mousePos.y - yDisplacement, 0);
                 this.transform.position = new Vector3(mousePos.x, mousePos.y, 0);
                 Debug.Log("isHeld");
+
             }
 
             if(!isLarryFilm)
@@ -81,10 +86,14 @@ public class FilmPieceBehavior : MonoBehaviour
 
     private void OnMouseOver()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            audioSource.Play();
+
+        }
         if (Input.GetMouseButton(0) && !isInFinalPosition && (filmManager.GetComponent<FilmManager>().currentFilmPiece == null || filmManager.GetComponent<FilmManager>().currentFilmPiece == this.gameObject))
         {
             isHeld = true;
-
             Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
             xDisplacement = mousePos.x - this.transform.position.x;
             yDisplacement = mousePos.y - this.transform.position.y;
