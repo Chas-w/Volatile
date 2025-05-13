@@ -8,10 +8,12 @@ public class StickBehavior : MonoBehaviour
     bool isInFinalPosition;
     float xDisplacement;
     float yDisplacement;
+    int posCount; 
 
     AudioSource audioSource; 
     [SerializeField] GameObject finalPosition;
     [SerializeField] GameObject manager;
+    StickManager positionManager; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +21,7 @@ public class StickBehavior : MonoBehaviour
         cam = Camera.main;
         isInFinalPosition = false;
         audioSource = GetComponent<AudioSource>();
+        positionManager = manager.GetComponent<StickManager>();
     }
 
     // Update is called once per frame
@@ -54,7 +57,7 @@ public class StickBehavior : MonoBehaviour
                 manager.GetComponent<StickManager>().currentStick = null;
 
                 isInFinalPosition = true;
-
+                positionManager.posCount++;
                 isHeld = false;
             }
         }

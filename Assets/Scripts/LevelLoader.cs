@@ -5,7 +5,7 @@ public class LevelLoader : MonoBehaviour
 {
     [Header("Timers")]
     [SerializeField] int timeAwayTimer; //can be used later to go back to menu if no one is interacting; 
-    [SerializeField] float bufferTime;
+    public float bufferTime;
 
     [Header("Scene Data")]
     [SerializeField] bool gameScene;

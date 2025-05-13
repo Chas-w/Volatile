@@ -1855,6 +1855,63 @@ MonoBehaviour:
   rotationTwo: {fileID: 196223068}
   slipSound: {fileID: 1152442780}
   downSpeed: -2
+--- !u!1001 &1079659771
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776518338671287311, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234856630368524011, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_Name
+      value: Trackball
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
 --- !u!1 &1152442777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,7 +2659,7 @@ MonoBehaviour:
   timeAwayTimer: 0
   bufferTime: 0
   gameScene: 1
-  miniGameDone: 0
+  relyOnTimer: 0
   interviewAudio: {fileID: 1251324197}
 --- !u!4 &1314749147
 Transform:
@@ -3740,6 +3797,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1079659771}
   - {fileID: 1152442779}
   - {fileID: 732584905}
   - {fileID: 972595892}
