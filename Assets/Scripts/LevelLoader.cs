@@ -9,7 +9,7 @@ public class LevelLoader : MonoBehaviour
 
     [Header("Scene Data")]
     [SerializeField] bool gameScene;
-    public bool miniGameDone; //not sure we'll need this but I'm giving us this option
+    public bool relyOnTimer; //not sure we'll need this but I'm giving us this option
     public AudioSource interviewAudio;
 
 
@@ -39,11 +39,12 @@ public class LevelLoader : MonoBehaviour
 
         }
 
+
     }
 
     public void GameSceneManager()
     {
-        if (!interviewAudio.isPlaying) //once the interview audio is done playing, trigger a buffer period (in case the audio clip is shorter than gameplay)
+        if (!interviewAudio.isPlaying && !relyOnTimer) //once the interview audio is done playing, trigger a buffer period (in case the audio clip is shorter than gameplay)
         {
             if (bufferTime >= 0)
             {
@@ -55,19 +56,44 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
+        if (relyOnTimer)
+        {
+            bufferTime -= Time.deltaTime;
+            if (bufferTime < 0)
+            {
+                LoadNextScene();
+            }
+        }
+
+
     }
 
     public void CutSceneManager()
     {
-        if (!interviewAudio.isPlaying) //load the next scene if there is no interview audio playing; 
+        if (!interviewAudio.isPlaying && !relyOnTimer) //load the next scene if there is no interview audio playing; 
         {
             LoadNextScene(); 
         }
+
+        if (relyOnTimer)
+        {
+            bufferTime -= Time.deltaTime;
+            if (bufferTime < 0)
+            {
+                LoadNextScene();
+            }
+        }
+
     }
 
     public void LoadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("A2 - G10")) 
+        {
+            SceneManager.LoadScene("MenuScene");
+
+        }
     }
 
     public void ReturnToMenu()

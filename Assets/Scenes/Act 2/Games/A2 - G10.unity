@@ -436,9 +436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeAwayTimer: 0
-  bufferTime: 0
+  bufferTime: 5
   gameScene: 1
-  miniGameDone: 0
+  relyOnTimer: 0
   interviewAudio: {fileID: 1166976489}
 --- !u!4 &448451292
 Transform:

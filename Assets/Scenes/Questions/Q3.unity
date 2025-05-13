@@ -469,7 +469,7 @@ MonoBehaviour:
   timeAwayTimer: 0
   bufferTime: 0
   gameScene: 0
-  miniGameDone: 0
+  relyOnTimer: 0
   interviewAudio: {fileID: 2040063431}
 --- !u!4 &589393068
 Transform:
@@ -712,7 +712,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336264236}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 7060802a1f09ceb46b7ffa160b149388, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 86f90567e9f2e334899f4a237b16e4b7, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}

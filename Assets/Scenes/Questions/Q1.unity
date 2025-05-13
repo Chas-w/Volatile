@@ -281,7 +281,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217583719}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 7060802a1f09ceb46b7ffa160b149388, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: dda82d8f7bee2b049a7686004762be4b, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -634,7 +634,7 @@ MonoBehaviour:
   timeAwayTimer: 0
   bufferTime: 0
   gameScene: 0
-  miniGameDone: 0
+  relyOnTimer: 0
   interviewAudio: {fileID: 786530984}
 --- !u!4 &1539008524
 Transform:

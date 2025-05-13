@@ -10,6 +10,7 @@ public class ChristineMovement : MonoBehaviour
     [SerializeField] float speed;
     Animator animator;
 
+    float inputTimer = 3; 
     //public variables
     public bool isStopped;
 
@@ -22,7 +23,9 @@ public class ChristineMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isStopped && Input.GetMouseButton(0)) {
+        inputTimer-= Time.deltaTime;
+
+        if (Input.GetMouseButton(0) || inputTimer <= 0 ) {
             //if (mouseTracker.transform.position.x > this.transform.position.x)
            // {
                 this.transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
@@ -31,6 +34,11 @@ public class ChristineMovement : MonoBehaviour
            // {
                 //this.transform.position += new Vector3(0, 0, 0);
            // }
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            inputTimer = 1.5f; 
         }
         
     }

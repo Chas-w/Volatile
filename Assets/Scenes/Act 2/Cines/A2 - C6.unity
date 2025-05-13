@@ -456,7 +456,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 60b5106261997f546946b86d7e0d268f, type: 3}
   m_Resource: {fileID: 8300000, guid: 60b5106261997f546946b86d7e0d268f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.222
+  m_Volume: 0.323
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
   timeAwayTimer: 0
   bufferTime: 0
   gameScene: 0
-  miniGameDone: 0
+  relyOnTimer: 0
   interviewAudio: {fileID: 1048070505}
 --- !u!4 &1339526905
 Transform:

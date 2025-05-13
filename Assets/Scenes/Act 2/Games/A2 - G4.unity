@@ -367,7 +367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInFinalPosition: 0
   isLarryFilm: 0
-  filmManager: {fileID: 0}
+  filmManager: {fileID: 239744542}
   finalPosition: {fileID: 306987343}
   larryTray: {fileID: 0}
 --- !u!60 &236354848
@@ -809,12 +809,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   christineFilmPieces:
   - {fileID: 749901796}
-  - {fileID: 1794447914}
   - {fileID: 990387937}
-  - {fileID: 236354844}
-  - {fileID: 981800993}
   - {fileID: 316991974}
-  - {fileID: 1141769512}
+  - {fileID: 981800993}
+  - {fileID: 236354844}
+  - {fileID: 1794447914}
   larryFilm:
   - {fileID: 2023969039}
   - {fileID: 699226287}
@@ -1014,7 +1013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInFinalPosition: 0
   isLarryFilm: 0
-  filmManager: {fileID: 0}
+  filmManager: {fileID: 239744542}
   finalPosition: {fileID: 1559481307}
   larryTray: {fileID: 0}
 --- !u!60 &316991978
@@ -2036,9 +2035,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeAwayTimer: 0
-  bufferTime: 0
+  bufferTime: 2
   gameScene: 1
-  miniGameDone: 0
+  relyOnTimer: 0
   interviewAudio: {fileID: 1374909450}
 --- !u!4 &745140613
 Transform:
@@ -2140,7 +2139,7 @@ Transform:
   m_GameObject: {fileID: 749901796}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.05, y: -3.04, z: 10}
+  m_LocalPosition: {x: -7.0500007, y: -3.0400002, z: 10}
   m_LocalScale: {x: 0.5701269, y: 0.5701269, z: 0.5701269}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2160,7 +2159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInFinalPosition: 0
   isLarryFilm: 0
-  filmManager: {fileID: 0}
+  filmManager: {fileID: 239744542}
   finalPosition: {fileID: 472404855}
   larryTray: {fileID: 0}
 --- !u!60 &749901800
@@ -2724,7 +2723,7 @@ Transform:
   m_GameObject: {fileID: 940329337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.99, y: -0.79, z: 5}
+  m_LocalPosition: {x: -7.43, y: -0.79, z: 5}
   m_LocalScale: {x: 7.995866, y: 4.3217096, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2834,7 +2833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInFinalPosition: 0
   isLarryFilm: 0
-  filmManager: {fileID: 0}
+  filmManager: {fileID: 239744542}
   finalPosition: {fileID: 1041064082}
   larryTray: {fileID: 0}
 --- !u!60 &981800997
@@ -3196,7 +3195,7 @@ Transform:
   m_GameObject: {fileID: 990387937}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.23, y: -3.03, z: 10}
+  m_LocalPosition: {x: -4.23, y: -3.0300002, z: 10}
   m_LocalScale: {x: 0.5701269, y: 0.5701269, z: 0.5701269}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3216,7 +3215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInFinalPosition: 0
   isLarryFilm: 0
-  filmManager: {fileID: 0}
+  filmManager: {fileID: 239744542}
   finalPosition: {fileID: 1352920526}
   larryTray: {fileID: 0}
 --- !u!60 &990387941
@@ -3659,7 +3658,7 @@ Transform:
   m_GameObject: {fileID: 1141769512}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.66, y: -0.32, z: 10}
+  m_LocalPosition: {x: -6.6600003, y: -0.32, z: 10}
   m_LocalScale: {x: 0.5701269, y: 0.5701269, z: 0.5701269}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3679,9 +3678,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInFinalPosition: 0
   isLarryFilm: 0
-  filmManager: {fileID: 0}
+  filmManager: {fileID: 239744542}
   finalPosition: {fileID: 393700167}
-  larryTray: {fileID: 0}
+  larryTray: {fileID: 1480938890}
 --- !u!60 &1141769516
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5200,7 +5199,7 @@ Transform:
   m_GameObject: {fileID: 1794447914}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.8, y: -0.36, z: 10}
+  m_LocalPosition: {x: 6.4, y: -1.77, z: 10}
   m_LocalScale: {x: 0.5701269, y: 0.5701269, z: 0.5701269}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5220,7 +5219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInFinalPosition: 0
   isLarryFilm: 0
-  filmManager: {fileID: 0}
+  filmManager: {fileID: 239744542}
   finalPosition: {fileID: 597451332}
   larryTray: {fileID: 0}
 --- !u!60 &1794447918
@@ -6077,12 +6076,12 @@ SceneRoots:
   - {fileID: 239744544}
   - {fileID: 575738600}
   - {fileID: 749901798}
-  - {fileID: 1794447916}
   - {fileID: 990387939}
-  - {fileID: 236354846}
-  - {fileID: 981800995}
   - {fileID: 316991976}
   - {fileID: 1141769514}
+  - {fileID: 1794447916}
+  - {fileID: 236354846}
+  - {fileID: 981800995}
   - {fileID: 1700986259}
   - {fileID: 1777563744}
   - {fileID: 938370558}

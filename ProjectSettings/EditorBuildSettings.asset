@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: 8925d83f5ec029e4a81a748077c7931e
   - enabled: 1
-    path: Assets/Scenes/Act 1/Games/Lighter.unity
-    guid: a208fde2906b0c94c85545c0dd063f77
-  - enabled: 1
     path: Assets/Scenes/Questions/Q1.unity
     guid: 97200f5b8cb136942b1c791d6a73b087
   - enabled: 1

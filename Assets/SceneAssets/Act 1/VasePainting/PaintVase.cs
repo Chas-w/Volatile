@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PaintVase : MonoBehaviour
 {
-
+    /*
     [SerializeField] GameObject mouseTracker;
     [SerializeField] float hRadius;
     [SerializeField] float vRadius;
@@ -40,4 +40,60 @@ public class PaintVase : MonoBehaviour
         } 
         this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alphaValue);
     }
+    */
+    [SerializeField] float minDistance = .1f;
+    [SerializeField] Brush brush; 
+
+    LineRenderer line;
+    Vector3 prevPos;
+
+    AudioSource audioSource;
+    bool play; 
+
+    private void Start()
+    {
+        line = GetComponent<LineRenderer>();
+        line.positionCount = 1; 
+        prevPos = transform.position;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false; 
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    private void Update()
+    {
+        if (brush.stroke)
+        {
+            if (!play)
+            {
+                audioSource.Play();
+                play = true; 
+            }
+            Vector3 currentPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            currentPosition.z = 0;
+
+            if (Vector3.Distance(currentPosition, prevPos) > minDistance)
+            {
+                if (prevPos == transform.position)
+                {
+                    line.SetPosition(0, currentPosition);
+                }
+                else
+                {
+                    line.positionCount++;
+                    line.SetPosition(line.positionCount - 1, currentPosition);
+                }
+
+
+        
+                prevPos = currentPosition;
+            }
+        }
+        if (!brush.stroke)
+        {
+            play = false;
+            audioSource.Pause();
+        }
+    }
+
 }

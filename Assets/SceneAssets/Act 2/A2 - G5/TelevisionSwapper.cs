@@ -1,12 +1,15 @@
 using UnityEngine;
 //using static UnityEditor.PlayerSettings;
 using UnityEngine.UIElements;
+using UnityEngine.Video;
 
 public class TelevisionSwapper : MonoBehaviour
 {
-    [SerializeField] Sprite[] channelSprites;
-    [SerializeField] SpriteRenderer channels; 
+    [SerializeField] VideoClip[] channelSprites;
+    //[SerializeField] SpriteRenderer channels; 
     int currentFamily;
+    public VideoPlayer tvScreen;
+    //[SerializeField] VideoClip[] mp4s; 
 
 
     AudioSource audioSource; 
@@ -31,7 +34,8 @@ public class TelevisionSwapper : MonoBehaviour
 
             if (i == currentFamily)
             {
-                channels.sprite = channelSprites[i];
+                // tvScreen.VideoClip = channelSprites[i];
+                tvScreen.clip = channelSprites[i];
             }
         }
         if (Input.GetMouseButtonDown(0))

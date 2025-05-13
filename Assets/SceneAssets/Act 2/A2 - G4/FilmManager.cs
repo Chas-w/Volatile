@@ -13,6 +13,7 @@ public class FilmManager : MonoBehaviour
 
     bool isCheckingFilm;
     bool isMovingTray;
+
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,7 +35,6 @@ public class FilmManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (isCheckingFilm)
         {
             int numInFinal = 0;
