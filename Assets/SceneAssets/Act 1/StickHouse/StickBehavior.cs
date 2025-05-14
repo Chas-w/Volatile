@@ -38,7 +38,7 @@ public class StickBehavior : MonoBehaviour
 
             if (isHeld) {
                 //this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(mousePos.x, mousePos.y, 0), 0.01f);
-                this.transform.position = new Vector3(mousePos.x - xDisplacement, mousePos.y - yDisplacement, 0);
+                this.transform.position = new Vector3(mousePos.x - xDisplacement, mousePos.y - yDisplacement, -8);
                 Debug.Log("isHeld");
             }
 

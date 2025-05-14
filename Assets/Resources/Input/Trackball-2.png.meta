@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Trackball-2_0: 359303175531061896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

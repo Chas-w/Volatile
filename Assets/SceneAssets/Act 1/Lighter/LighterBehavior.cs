@@ -40,7 +40,10 @@ public class LighterBehavior : MonoBehaviour
         if (isLit && this.transform.position.x < endPosition.x + 0.1f && this.transform.position.x > endPosition.x - 0.1f
             && this.transform.position.y < endPosition.y + 0.1f && this.transform.position.y > endPosition.y - 0.1f) {
             LightCigarette();
+
         }
+        //Debug.Log(this.transform.position);
+
 
     }
 
@@ -56,7 +59,7 @@ public class LighterBehavior : MonoBehaviour
     {
         cigarette.GetComponent<Animator>().SetTrigger("Light");
         litCigSound.Play();
-        Invoke("NextScene", 3);
+        Invoke("NextScene", 4);
     }
 
     void NextScene()

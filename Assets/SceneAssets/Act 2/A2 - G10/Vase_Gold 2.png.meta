@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vase_Gold 2_0: -5991835885904150617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

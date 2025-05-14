@@ -300,6 +300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trackball
       objectReference: {fileID: 0}
+    - target: {fileID: 7234856630368524011, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2582,6 +2586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 1126725235906891447, guid: 23c960eba8dc8a043803ffdd02503b5b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1954684067131004478, guid: 23c960eba8dc8a043803ffdd02503b5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.62
@@ -3427,6 +3435,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStick: {fileID: 0}
+  posCount: 0
+  vaseScene: 0
+  animator: {fileID: 0}
+  levelLoader: {fileID: 0}
 --- !u!1 &1793576675
 GameObject:
   m_ObjectHideFlags: 0

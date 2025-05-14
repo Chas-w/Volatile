@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Choy_Walk_Camera-7_0: 5097281908137127837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

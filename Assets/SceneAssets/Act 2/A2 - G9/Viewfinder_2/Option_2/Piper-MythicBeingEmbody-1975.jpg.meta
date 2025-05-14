@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Piper-MythicBeingEmbody-1975_0: 2680444322812507645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Piper-MythicBeingCruising-1975_0: 4559343916694654141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

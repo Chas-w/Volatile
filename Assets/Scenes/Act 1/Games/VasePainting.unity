@@ -440,6 +440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trackball
       objectReference: {fileID: 0}
+    - target: {fileID: 7234856630368524011, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

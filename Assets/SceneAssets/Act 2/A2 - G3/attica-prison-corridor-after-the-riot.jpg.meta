@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      attica-prison-corridor-after-the-riot_0: 2059714667343802398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

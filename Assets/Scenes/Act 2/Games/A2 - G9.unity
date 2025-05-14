@@ -181,7 +181,7 @@ Transform:
   m_GameObject: {fileID: 59801871}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.085, y: -0.036, z: -0.042}
+  m_LocalPosition: {x: -0.3705666, y: -0.39582622, z: -0.042}
   m_LocalScale: {x: 0.049407117, y: 0.049407117, z: 0.049407117}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -248,7 +248,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 9.870674, y: 4.1944103}
+  m_Offset: {x: 8.554425, y: 4.1944103}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -258,7 +258,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.967477, y: 2.1936035}
+  m_Size: {x: 1.9718766, y: 2.1936035}
   m_EdgeRadius: 0
 --- !u!212 &59801875
 SpriteRenderer:
@@ -1886,7 +1886,7 @@ Transform:
   m_GameObject: {fileID: 507861557}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.032, y: -0.39, z: -0.042}
+  m_LocalPosition: {x: 0.32113305, y: -0.39, z: -0.042}
   m_LocalScale: {x: 0.049407117, y: 0.049407117, z: 0.049407117}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3868,6 +3868,10 @@ PrefabInstance:
     - target: {fileID: 7234856630368524011, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
       propertyPath: m_Name
       value: Trackball
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234856630368524011, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6566,6 +6570,10 @@ PrefabInstance:
     - target: {fileID: 1126725235906891447, guid: 23c960eba8dc8a043803ffdd02503b5b, type: 3}
       propertyPath: m_Name
       value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126725235906891447, guid: 23c960eba8dc8a043803ffdd02503b5b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1954684067131004478, guid: 23c960eba8dc8a043803ffdd02503b5b, type: 3}
       propertyPath: m_LocalPosition.x

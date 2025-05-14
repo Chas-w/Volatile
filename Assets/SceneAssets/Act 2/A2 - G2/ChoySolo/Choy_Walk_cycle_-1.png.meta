@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Choy_Walk_cycle_-1_0: -241942084674833319
+      Choy_Walk_cycle_-1_1: 4374817055091758969
+      Choy_Walk_cycle_-1_2: -4041412229430605043
+      Choy_Walk_cycle_-1_3: -1358236517003056789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

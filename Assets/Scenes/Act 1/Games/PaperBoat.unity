@@ -1907,6 +1907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trackball
       objectReference: {fileID: 0}
+    - target: {fileID: 7234856630368524011, guid: 2817da8c4062aaa4eb07fb620b4c4a7f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2012,7 +2016,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 27de1fedc426d6b4ab3004309df75721, type: 3}
   m_Resource: {fileID: 8300000, guid: 27de1fedc426d6b4ab3004309df75721, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.236
   m_Pitch: 1
   Loop: 0

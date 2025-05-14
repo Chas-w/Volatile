@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      protest_induction-center_0: 6360215629243034611
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
